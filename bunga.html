@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Bunga & Cicilan Pinjaman — Kalkulator Kita</title>
+<meta name="description" content="Simulasi cicilan bulanan dan total bunga pinjaman secara instan dan gratis.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="stamp">KK</span> Kalkulator Kita</a>
+    <nav class="main">
+      <a href="index.html">Beranda</a>
+      <a href="bmi.html">BMI</a>
+      <a href="konversi.html">Konversi</a>
+      <a href="bunga.html" class="active">Bunga &amp; Cicilan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tool-head">
+  <div class="wrap">
+    <span class="no">Alat 03</span>
+    <h1>Kalkulator Bunga &amp; Cicilan</h1>
+    <p>Simulasikan cicilan bulanan pinjaman berdasarkan jumlah pokok, suku bunga per tahun, dan tenor.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="calc">
+      <div class="field">
+        <label for="bunga-pokok">Jumlah pinjaman (Rp)</label>
+        <input type="number" id="bunga-pokok" min="0" step="1" placeholder="cth. 20000000">
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="bunga-persen">Suku bunga per tahun (%)</label>
+          <input type="number" id="bunga-persen" min="0" step="0.01" placeholder="cth. 8.5">
+        </div>
+        <div class="field">
+          <label for="bunga-lama">Lama cicilan (bulan)</label>
+          <input type="number" id="bunga-lama" min="1" step="1" placeholder="cth. 24">
+        </div>
+      </div>
+      <button class="calc-btn" onclick="hitungCicilan()">Hitung Cicilan</button>
+
+      <div class="receipt" id="bunga-receipt">
+        <div class="r-title">Struk Simulasi Cicilan</div>
+        <div class="r-line"><span>Cicilan / bulan</span><span id="bunga-hasil-cicilan">-</span></div>
+        <div class="r-line"><span>Total bunga</span><span id="bunga-hasil-bunga">-</span></div>
+        <div class="r-total"><span>Total bayar</span><span id="bunga-hasil-total">-</span></div>
+        <div class="r-note">Metode anuitas (cicilan tetap tiap bulan). Perkiraan, bukan penawaran resmi bank.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <div class="box">
+    <!-- SLOT IKLAN: ganti dengan kode unit iklan Google AdSense di sini -->
+    Ruang iklan
+  </div>
+</div>
+
+<section class="article">
+  <div class="wrap">
+    <h2>Metode anuitas itu apa?</h2>
+    <p>Sebagian besar cicilan KTA, KPR, dan pinjaman bank di Indonesia memakai metode anuitas — nominal cicilan bulanan tetap sama dari awal sampai akhir, tapi komposisi antara pokok dan bunga di dalamnya berubah tiap bulan (di awal porsi bunga lebih besar, makin lama porsi pokok makin besar). Kalkulator ini menghitung nominal cicilan tetap tersebut berdasarkan suku bunga tahunan yang Anda masukkan.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fine">© 2026 Kalkulator Kita. Alat hitung ini untuk edukasi umum, bukan pengganti nasihat medis atau finansial profesional.</div>
+    <nav>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
