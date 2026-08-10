@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kebijakan Privasi — Kalkulator Kita</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="stamp">KK</span> Kalkulator Kita</a>
+    <nav class="main">
+      <a href="index.html">Beranda</a>
+      <a href="bmi.html">BMI</a>
+      <a href="konversi.html">Konversi</a>
+      <a href="bunga.html">Bunga &amp; Cicilan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tool-head">
+  <div class="wrap">
+    <span class="no">Legal</span>
+    <h1>Kebijakan Privasi</h1>
+    <p>Terakhir diperbarui: Agustus 2026.</p>
+  </div>
+</section>
+
+<section class="article">
+  <div class="wrap">
+    <h2>Data yang kami proses</h2>
+    <p>Angka yang Anda masukkan ke dalam kalkulator (berat badan, tinggi badan, jumlah pinjaman, dsb.) diproses sepenuhnya di perangkat/peramban Anda sendiri. Kami tidak mengirim atau menyimpan angka-angka tersebut ke server kami.</p>
+
+    <h2>Cookie dan iklan pihak ketiga</h2>
+    <p>Situs ini menampilkan iklan yang dilayani oleh Google AdSense. Google, sebagai vendor pihak ketiga, menggunakan cookie untuk menayangkan iklan berdasarkan kunjungan Anda sebelumnya ke situs ini maupun situs lain di internet.</p>
+    <p>Anda dapat menonaktifkan penggunaan cookie personalisasi iklan dengan mengunjungi <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Pengaturan Iklan Google</a>. Pihak ketiga lain yang menampilkan iklan juga mungkin menggunakan cookie mereka sendiri untuk personalisasi.</p>
+
+    <h2>Statistik pengunjung</h2>
+    <p>Kami dapat menggunakan alat analitik pihak ketiga (misalnya Google Analytics) untuk memahami secara umum bagaimana pengunjung menggunakan situs ini, seperti halaman yang paling sering dibuka. Data ini bersifat agregat dan tidak digunakan untuk mengidentifikasi Anda secara pribadi.</p>
+
+    <h2>Persetujuan</h2>
+    <p>Dengan menggunakan situs ini, Anda menyetujui pemrosesan data sebagaimana dijelaskan dalam kebijakan privasi ini. Jika Anda tidak setuju, sebaiknya hentikan penggunaan situs ini.</p>
+
+    <h2>Perubahan kebijakan</h2>
+    <p>Kebijakan ini dapat diperbarui sewaktu-waktu. Perubahan akan langsung berlaku sejak dipublikasikan di halaman ini.</p>
+
+    <h2>Kontak</h2>
+    <p>Pertanyaan seputar kebijakan privasi ini dapat dikirim melalui halaman <a href="kontak.html">Kontak</a>.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fine">© 2026 Kalkulator Kita.</div>
+    <nav>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+
