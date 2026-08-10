@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Zakat — Kalkulator Kita</title>
+<meta name="description" content="Hitung apakah harta Anda sudah wajib zakat dan berapa nominal zakat maal yang harus dikeluarkan.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="stamp">KK</span> Kalkulator Kita</a>
+    <nav class="main">
+      <a href="index.html">Beranda</a>
+      <a href="bmi.html">BMI</a>
+      <a href="konversi.html">Konversi</a>
+      <a href="bunga.html">Bunga &amp; Cicilan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tool-head">
+  <div class="wrap">
+    <span class="no">Alat 04</span>
+    <h1>Kalkulator Zakat Maal</h1>
+    <p>Cek apakah harta Anda sudah mencapai nisab dan berapa nominal zakat 2.5% yang perlu dikeluarkan.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="calc">
+      <div class="field">
+        <label for="zakat-harta">Total harta yang dizakati (Rp)</label>
+        <input type="number" id="zakat-harta" min="0" step="1" placeholder="cth. 60000000">
+      </div>
+      <div class="field">
+        <label for="zakat-nisab">Nisab saat ini (Rp)</label>
+        <input type="number" id="zakat-nisab" min="0" step="1" placeholder="cth. 85 gram emas x harga emas per gram">
+      </div>
+      <button class="calc-btn" onclick="hitungZakat()">Hitung Zakat</button>
+
+      <div class="receipt" id="zakat-receipt">
+        <div class="r-title">Struk Hasil Zakat</div>
+        <div class="r-line"><span>Status</span><span id="zakat-hasil-status">-</span></div>
+        <div class="r-total"><span>Zakat (2.5%)</span><span id="zakat-hasil-nominal">-</span></div>
+        <div class="r-note">Berlaku jika harta sudah dimiliki genap 1 tahun (haul).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <div class="box">
+    <!-- SLOT IKLAN: ganti dengan kode unit iklan Google AdSense di sini -->
+    Ruang iklan
+  </div>
+</div>
+
+<section class="article">
+  <div class="wrap">
+    <h2>Apa itu nisab dan haul?</h2>
+    <p>Nisab adalah batas minimum harta yang membuat seseorang wajib membayar zakat maal — umumnya disetarakan dengan nilai 85 gram emas. Karena harga emas berubah tiap hari, sebaiknya cek harga emas terkini lalu kalikan 85 gram untuk mendapatkan nilai nisab dalam rupiah, dan masukkan ke kolom di atas. Haul adalah syarat harta tersebut sudah dimiliki genap satu tahun sebelum wajib dizakati. Untuk perhitungan yang lebih rinci sesuai jenis harta (emas, tabungan, perniagaan, penghasilan), disarankan berkonsultasi dengan lembaga amil zakat resmi.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fine">© 2026 Kalkulator Kita. Alat hitung ini untuk edukasi umum, bukan pengganti nasihat medis atau finansial profesional.</div>
+    <nav>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
