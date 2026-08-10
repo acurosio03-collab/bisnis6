@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konversi Satuan — Kalkulator Kita</title>
+<meta name="description" content="Konversi satuan panjang, berat, dan suhu secara instan dan gratis.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="stamp">KK</span> Kalkulator Kita</a>
+    <nav class="main">
+      <a href="index.html">Beranda</a>
+      <a href="bmi.html">BMI</a>
+      <a href="konversi.html" class="active">Konversi</a>
+      <a href="bunga.html">Bunga &amp; Cicilan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tool-head">
+  <div class="wrap">
+    <span class="no">Alat 02</span>
+    <h1>Konversi Satuan</h1>
+    <p>Ubah satuan panjang, berat, atau suhu tanpa perlu mengingat rumus konversinya.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="calc">
+      <div class="field">
+        <label for="konv-jenis">Jenis satuan</label>
+        <select id="konv-jenis" onchange="isiSatuanKonversi()">
+          <option value="panjang">Panjang</option>
+          <option value="berat">Berat</option>
+          <option value="suhu">Suhu</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="konv-nilai">Nilai</label>
+        <input type="number" id="konv-nilai" step="any" placeholder="cth. 10">
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="konv-dari">Dari satuan</label>
+          <select id="konv-dari"></select>
+        </div>
+        <div class="field">
+          <label for="konv-ke">Ke satuan</label>
+          <select id="konv-ke"></select>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="hitungKonversi()">Konversi</button>
+
+      <div class="receipt" id="konv-receipt">
+        <div class="r-title">Struk Hasil Konversi</div>
+        <div class="r-line"><span>Nilai asal</span><span id="konv-hasil-asal">-</span></div>
+        <div class="r-total"><span>Hasil</span><span id="konv-hasil-nilai">-</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <div class="box">
+    <!-- SLOT IKLAN: ganti dengan kode unit iklan Google AdSense di sini -->
+    Ruang iklan
+  </div>
+</div>
+
+<section class="article">
+  <div class="wrap">
+    <h2>Kenapa satuan berbeda-beda antar negara?</h2>
+    <p>Sebagian besar dunia memakai sistem metrik (meter, kilogram, celsius), sementara beberapa negara seperti Amerika Serikat masih memakai sistem imperial (inci, pon, fahrenheit). Kalau Anda berbelanja di situs luar negeri, membaca spesifikasi produk impor, atau merencanakan perjalanan, alat konversi ini membantu menyamakan satuan dengan cepat tanpa salah hitung.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fine">© 2026 Kalkulator Kita. Alat hitung ini untuk edukasi umum, bukan pengganti nasihat medis atau finansial profesional.</div>
+    <nav>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>isiSatuanKonversi();</script>
+</body>
+</html>
+
