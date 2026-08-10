@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Usia &amp; Selisih Tanggal — Kalkulator Kita</title>
+<meta name="description" content="Hitung usia tepat dalam tahun, bulan, hari, atau selisih hari antara dua tanggal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="stamp">KK</span> Kalkulator Kita</a>
+    <nav class="main">
+      <a href="index.html">Beranda</a>
+      <a href="bmi.html">BMI</a>
+      <a href="konversi.html">Konversi</a>
+      <a href="bunga.html">Bunga &amp; Cicilan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tool-head">
+  <div class="wrap">
+    <span class="no">Alat 06</span>
+    <h1>Kalkulator Usia &amp; Selisih Tanggal</h1>
+    <p>Hitung usia tepat dalam tahun-bulan-hari, atau selisih hari antara tanggal lahir dan tanggal tertentu.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="calc">
+      <div class="row2">
+        <div class="field">
+          <label for="usia-lahir">Tanggal lahir</label>
+          <input type="date" id="usia-lahir">
+        </div>
+        <div class="field">
+          <label for="usia-target">Tanggal pembanding</label>
+          <input type="date" id="usia-target">
+        </div>
+      </div>
+      <button class="calc-btn" onclick="hitungUsia()">Hitung Usia</button>
+
+      <div class="receipt" id="usia-receipt">
+        <div class="r-title">Struk Hasil Usia</div>
+        <div class="r-line"><span>Usia</span><span id="usia-hasil-ymd">-</span></div>
+        <div class="r-total"><span>Total hari</span><span id="usia-hasil-total">-</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <div class="box">
+    <!-- SLOT IKLAN: ganti dengan kode unit iklan Google AdSense di sini -->
+    Ruang iklan
+  </div>
+</div>
+
+<section class="article">
+  <div class="wrap">
+    <h2>Kapan alat ini biasanya dipakai?</h2>
+    <p>Selain sekadar rasa penasaran soal usia tepat sampai hitungan hari, alat ini juga sering dipakai untuk keperluan administratif — menghitung syarat usia minimum pendaftaran sekolah atau CPNS, memperkirakan usia pensiun berdasarkan tanggal lahir, atau menghitung selisih hari untuk keperluan kontrak dan masa berlaku dokumen. Cukup isi tanggal lahir dan tanggal pembanding (bisa hari ini atau tanggal target di masa depan), lalu hasilnya langsung keluar tanpa perlu menghitung manual di kalender.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fine">© 2026 Kalkulator Kita. Alat hitung ini untuk edukasi umum, bukan pengganti nasihat medis atau finansial profesional.</div>
+    <nav>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function(){
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById('usia-target').value = today;
+  })();
+</script>
+</body>
+</html>
+
