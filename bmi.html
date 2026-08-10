@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator BMI (Indeks Massa Tubuh) — Kalkulator Kita</title>
+<meta name="description" content="Hitung BMI dan kategori berat badan Anda secara instan dan gratis.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="stamp">KK</span> Kalkulator Kita</a>
+    <nav class="main">
+      <a href="index.html">Beranda</a>
+      <a href="bmi.html" class="active">BMI</a>
+      <a href="konversi.html">Konversi</a>
+      <a href="bunga.html">Bunga &amp; Cicilan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </div>
+</header>
+
+<section class="tool-head">
+  <div class="wrap">
+    <span class="no">Alat 01</span>
+    <h1>Kalkulator BMI</h1>
+    <p>Masukkan berat dan tinggi badan untuk melihat Indeks Massa Tubuh (BMI) dan kategorinya menurut standar WHO.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="calc">
+      <div class="row2">
+        <div class="field">
+          <label for="bmi-berat">Berat badan (kg)</label>
+          <input type="number" id="bmi-berat" min="1" step="0.1" placeholder="cth. 62">
+        </div>
+        <div class="field">
+          <label for="bmi-tinggi">Tinggi badan (cm)</label>
+          <input type="number" id="bmi-tinggi" min="1" step="0.1" placeholder="cth. 168">
+        </div>
+      </div>
+      <button class="calc-btn" onclick="hitungBMI()">Hitung BMI</button>
+
+      <div class="receipt" id="bmi-receipt">
+        <div class="r-title">Struk Hasil BMI</div>
+        <div class="r-line"><span>Nilai BMI</span><span id="bmi-hasil-nilai">-</span></div>
+        <div class="r-line"><span>Kategori</span><span id="bmi-hasil-kategori">-</span></div>
+        <div class="r-note">Standar kategori WHO. Bukan diagnosis medis.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <div class="box">
+    <!-- SLOT IKLAN: ganti dengan kode unit iklan Google AdSense di sini -->
+    Ruang iklan
+  </div>
+</div>
+
+<section class="article">
+  <div class="wrap">
+    <h2>Cara membaca hasil BMI</h2>
+    <p>BMI di bawah 18.5 masuk kategori kurus, 18.5–24.9 dianggap normal, 25–29.9 kelebihan berat badan, dan di atas 30 masuk kategori obesitas. Angka ini adalah indikator umum, bukan diagnosis — komposisi otot, usia, dan kondisi kesehatan lain juga berpengaruh. Jika hasil Anda jauh dari rentang normal, sebaiknya konsultasikan ke tenaga medis untuk evaluasi lebih lengkap.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fine">© 2026 Kalkulator Kita. Alat hitung ini untuk edukasi umum, bukan pengganti nasihat medis atau finansial profesional.</div>
+    <nav>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
